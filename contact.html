@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Appointment</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #d6d6f5;
+        }
+        .header {
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        .header .logoleft {
+            position: absolute;
+            left: 65px;
+            top: 7px;
+            font-size: 35px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        .header .logoright {
+            position: absolute;
+            left: 180px;
+            top: 7px;
+            font-size: 35px;
+            font-weight: bold;
+            color: blue;
+            text-decoration: none;
+        }
+        .header .phone-number {
+            display: inline-block;
+            font-size: 18px;
+            transform: translateX(+280%);
+        }
+        .header .btn {
+            position: absolute;
+            transform: translateX(+380%);
+            top: 14px;
+            color: black;
+        }
+        .header .btn:hover{
+            text-decoration: none;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #867dc1;
+            border-radius: 10px;
+            border: 2px solid #0000ff;
+        }
+        .form-group label {
+            color: white;
+        }
+        .form-control {
+            border-radius: 0;
+        }
+        h2 {
+            color: black;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="header bg-info">
+        <a  class="logoleft " href="index.html">Wright</a><a class="logoright" href="index.html">Dental</a>
+        <div class="phone-number">
+            <img src="phone-icon.png" alt="Phone Icon" style="width: 24px; vertical-align: middle;">
+            <span style="color: black; font-weight:bold;">613-304-2424</span>
+        </div>
+        <a href="contact.html" class="btn btn-light btn-link">Book Online</a>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center">Book Your Appointment Today</h2>
+        <form id="appointmentForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number *</label>
+                <input type="tel" class="form-control" id="phoneNumber" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="service">Type of Service *</label>
+                    <select id="service" class="form-control" required>
+                        <option selected>New Paitent Exam & Cleaning</option>
+                        <option>Dental Fillings</option>
+                        <option>Root Canal Therapy</option>
+                        <option>Tooth Extractions</option>
+                        <option>Digital X-Rays</option>
+                        <option>Mouthguards</option>
+                        <option>Gum Disease Treatment</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="expert">Select an Expert</label>
+                    <select id="expert" class="form-control" required>
+                        <option selected>Cameron Fisher</option>
+                        <option>Jane Smith</option>
+                        <option>Michael Brown</option>
+                        <option>Emily Johnson</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="date">Select a Date for your Appointment *</label>
+                    <select id="date" class="form-control" required>
+                        <option>June 9</option>
+                        <option>June 10</option>
+                        <option>June 11</option>
+                        <option>June 12</option>
+                        <option>June 13</option>
+                        <option>June 14</option>
+                        <option>June 15</option>
+                        <option>June 16</option>
+                        <option>June 17</option>
+                        <option>June 18</option>
+                        <option>June 19</option>
+                        <option>June 20</option>
+                        <option>June 21</option>
+                        <option>June 22</option>
+                        <option>June 23</option>
+                        <option>June 24</option>
+                        <option>June 25</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="time">Select a Time for your Appointment *</label>
+                    <select id="time" class="form-control" required>
+                        <option>10:00 am</option>
+                        <option>10:45 am</option>
+                        <option>11:30 am</option>
+                        <option>12:15 pm</option>
+                        <option>1:00 pm</option>
+                        <option>1:45 pm</option>
+                        <option>2:30 pm</option>
+                        <option>3:15 pm</option>
+                        <option>4:00 pm</option>
+
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">WrightDental</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Thank you! You have succsessfully booked your appointment
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="confirmSubmit">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting immediately
+            $('#confirmationModal').modal('show'); // Show the custom confirmation modal
+        });
+
+        document.getElementById('confirmSubmit').addEventListener('click', function() {
+            $('#confirmationModal').modal('hide'); // Hide the confirmation modal
+            document.getElementById('appointmentForm').submit(); // Submit the form
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WrightDental - Our Services</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #d6d6f5;
+        }
+        .header {
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        .header .logoleft {
+            position: absolute;
+            left: 65px;
+            top: 7px;
+            font-size: 35px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        .header .logoright {
+            position: absolute;
+            left: 180px;
+            top: 7px;
+            font-size: 35px;
+            font-weight: bold;
+            color: blue;
+            text-decoration: none;
+        }
+        .header .phone-number {
+            display: inline-block;
+            font-size: 18px;
+            transform: translateX(+280%);
+        }
+        .header .btn {
+            position: absolute;
+            transform: translateX(+380%);
+            top: 14px;
+            color: black;
+        }
+        .header .btn:hover{
+            text-decoration: none;
+        }
+        .services-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+        
+        .services-container .image-container img {
+            width: 85%;
+            transform: translateY(-24%);
+            margin-left: -161px;
+        }
+
+        .services-container .services-list h3 {
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            transform: translateX(-60%);
+            margin-bottom: 100px;
+            
+        }
+        .services-container .services-list ul {
+            list-style-type: none;
+            padding: 0;
+            transform: translateY(-20%);
+        }
+        .services-container .services-list ul li {
+            margin-bottom: 27px;
+            transform: translateX(-60%);
+            
+        }
+        .services-container .services-list ul li a {
+            color: #004475;
+            text-decoration: none;
+            font-size: 23px;
+            margin-bottom: 100px;
+        }
+        .services-container .services-list ul li a:hover {
+            text-decoration:double
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="header bg-info">
+        <a  class="logoleft" href="index.html">Wright</a><a class="logoright" href="index.html">Dental</a>
+        <div class="phone-number">
+            <img src="phone-icon.png" alt="Phone Icon" style="width: 24px; vertical-align: middle;">
+            <span style="color: black; font-weight:bold;">613-304-2424</span>
+        </div>
+        <a href="contact.html" class="btn btn-light btn-link">Book Online</a>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services-container">
+        <div class="image-container">
+            <img src="Smile.jpg" alt="Smiling Person">
+        </div>
+        <div class="services-list">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="#">New Paitent Exam & Cleaning</a></li>
+                <li><a href="#">Dental Fillings</a></li>
+                <li><a href="#">Root Canal Therapy</a></li>
+                <li><a href="#">Tooth Extractions</a></li>
+                <li><a href="#">Digital X-Rays</a></li>
+                <li><a href="#">Mouthguards</a></li>
+                <li><a href="#">Gum Disease Treatment</a></li>   
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

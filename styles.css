@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.header-top .contact-info img {
+    width: 30px;
+}
+header .number{
+    font-weight: bold;
+}
+.header-top .btn{
+    color: black;
+}
+.contact-info .mr-2{
+    font-weight:bold;
+}
+.header-top .contact-info .wright{
+    color:white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 700px ;
+}
+.header-top .contact-info .dental{
+    color: blue;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    transform: translateX(-700px);
+
+}
+.header-top .btn:hover{
+    text-decoration: none;
+}
+.navbar .logo {
+    width: 180px;
+    margin-bottom: 45px;
+    transform: translateX(110px);
+    
+}
+.custom-navbar {
+    background-color: #1E1E1E;
+}
+.navbar .wright {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 65px;
+    transform: translateX(-80px);
+}
+
+.navbar .dental {
+    color: blue;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 65px;
+    transform: translateX(-80px);
+}
+
+
+.nav-itema{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 50px;
+}
+.nav-itemb{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 50px;
+}
+.image .img {
+    width: 53%;
+    height: 80%;
+    margin-left: -38.5px;
+    transform: translateY(-4.5%);
+    position: absolute;
+
+}
+.row .btn{
+    color: white;
+    transform: translateX(-185%);
+}
+.row .font-weight-bold{
+    color: black;
+    margin-top: 250px;
+}
+.nav-link{
+    color: white;
+}
+

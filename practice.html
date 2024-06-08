@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WrightDental - Meet Our Team</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #d6d6f5;
+        }
+        .header {
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        .header .logoleft {
+            position: absolute;
+            left: 65px;
+            top: 7px;
+            font-size: 35px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        .header .logoright {
+            position: absolute;
+            left: 180px;
+            top: 7px;
+            font-size: 35px;
+            font-weight: bold;
+            color: blue;
+            text-decoration: none;
+        }
+        .header .phone-number {
+            display: inline-block;
+            font-size: 18px;
+            transform: translateX(+280%);
+        }
+        .header .btn{
+            position: absolute;
+            transform: translateX(+380%);
+            top: 14px;
+            color: black;
+        }
+        .header .btn:hover{
+            text-decoration: none;
+        }
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+        .team-member {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 45%;
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .team-member h4 {
+            margin-bottom: 10px;
+            font-size: 22px;
+            color: #333;
+        }
+        .team-member p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="header bg-info">
+        <a href="index.html" class="logo">
+            <div class="logoleft">Wright</div>
+            <div class="logoright">Dental</div>
+        </a>
+        <div class="phone-number">
+            <img src="phone-icon.png" alt="Phone Icon" style="width: 24px; vertical-align: middle;">
+            <span style="color: black; font-weight: bold;">613-304-2424</span>
+        </div>
+        <a href="contact.html" class="btn btn-light btn-link">Book Online</a>
+    </div>
+
+    <!-- Team Section -->
+    <div class="team-container">
+        <div class="team-member">
+            <img src="team-member1.jpg" alt="Dr. Jane Smith">
+            <h4>Dr. Jane Smith</h4>
+            <p>Dr. Smith is our lead dentist with over 20 years of experience in cosmetic and general dentistry. She is dedicated to providing the best care possible.</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member2.jpg" alt="Dr. John Doe">
+            <h4>Dr. Cameron Fisher</h4>
+            <p>Dr. Fisher specializes in orthodontics and has helped hundreds of patients achieve their perfect smile. He is passionate about patient education and care.</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member3.jpg" alt="Dr. Emily Johnson">
+            <h4>Dr. Emily Johnson</h4>
+            <p>Dr. Johnson is an expert in pediatric dentistry. She ensures that our youngest patients have a comfortable and positive experience at the dentist.</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member4.jpg" alt="Dr. Michael Brown">
+            <h4>Dr. Michael Brown</h4>
+            <p>Dr. Brown has a keen interest in restorative dentistry and implantology. His focus is on restoring function and aesthetics for his patients.</p>
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
