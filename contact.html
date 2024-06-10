@@ -191,13 +191,13 @@
     </div>
     <script>
         document.getElementById('appointmentForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from submitting immediately
-            $('#confirmationModal').modal('show'); // Show the custom confirmation modal
+            event.preventDefault(); 
+            $('#confirmationModal').modal('show'); 
         });
 
         document.getElementById('confirmSubmit').addEventListener('click', function() {
-            $('#confirmationModal').modal('hide'); // Hide the confirmation modal
-            document.getElementById('appointmentForm').submit(); // Submit the form
+            $('#confirmationModal').modal('hide');
+            document.getElementById('appointmentForm').submit(); 
         });
     </script>
 </body>
